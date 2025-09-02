@@ -1,5 +1,7 @@
+import Link from 'next/link';
+
 export const Logo = () => (
   <div className="text-white font-bold text-xl">
-    <a href="/">Doctor Pathways</a>
+    <Link href="/">Doctor Pathways</Link>
   </div>
 );
