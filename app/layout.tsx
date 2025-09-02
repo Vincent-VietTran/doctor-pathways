@@ -9,6 +9,9 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
+  // base URL used to resolve relative social images
+  // TODO: replace url with actual domain URL
+  metadataBase: new URL('https://doctor-pathways.com'),
   title: "Doctor Pathways - Medical Specialty Training in Australia",
   description:
     "Your guide to medical specialty training in Australia. Navigate your journey from medical school to specialty training with comprehensive information on pathways, requirements, and applications.",
@@ -28,6 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Doctor Pathways",
     locale: "en_AU",
+    // TODO: replace url with actual domain URL
     url: "https://doctor-pathways.com",
     title: "Doctor Pathways - Medical Specialty Training in Australia",
     description:

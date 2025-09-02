@@ -1,4 +1,4 @@
-import { Book, User, Target, Scissors, Heart, Microscope, Stethoscope, Search } from 'lucide-react'
+import { Book, User, Target, Scissors, Heart, Microscope, Stethoscope } from 'lucide-react'
 import Header from '../components/Header'
 import SpecialtyCard from '../components/SpecialtyCard'
 import StepCard from '@/components/StepCard'
