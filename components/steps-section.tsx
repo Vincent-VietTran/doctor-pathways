@@ -29,24 +29,34 @@ const StepCard = ({ step, index }: { step: typeof steps[0]; index: number }) => 
   const Icon = step.icon;
 
   return (
-    <div className="relative">
-      <Card className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 hover:scale-105">
+    <div className="w-full">
+      <Card className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 hover:scale-105 border-0">
         <CardContent className="p-6">
-          <div className="flex items-center mb-4">
-            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-              <Icon className="w-6 h-6 text-blue-600" />
+          <div className="flex items-start gap-6">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center border-2 border-blue-100">
+                  <Icon className="w-5 h-5 text-blue-600" />
+                </div>
+              </div>
             </div>
-            <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
-              {step.id}
+
+            <div className="flex-1">
+              <div className="flex items-center gap-4">
+                <h3 className="text-2xl font-semibold text-gray-900">{step.title}</h3>
+                <span className="text-sm text-gray-500">{step.duration}</span>
+              </div>
+              <p className="text-gray-600 mt-3 leading-relaxed">{step.description}</p>
             </div>
           </div>
-          <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
-          <p className="text-gray-600 mb-3">{step.description}</p>
-          <p className="text-sm font-medium text-blue-600">Duration: {step.duration}</p>
         </CardContent>
       </Card>
+
+      {/* short centered connector between cards (shown except after last) */}
       {index < steps.length - 1 && (
-        <div className="hidden md:block absolute top-1/2 left-full w-8 h-0.5 bg-blue-300 transform -translate-y-1/2 ml-4"></div>
+        <div className="flex justify-center">
+          <div className="w-1.5 h-14 bg-blue-200 rounded mt-8 mb-8"></div>
+        </div>
       )}
     </div>
   );
@@ -65,10 +75,16 @@ const StepsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 relative">
-          {steps.map((step, index) => (
-            <StepCard key={step.id} step={step} index={index} />
-          ))}
+        <div className="max-w-3xl mx-auto">
+          <div className="flex flex-col gap-0">
+            {steps.map((step, index) => (
+              <div className="px-4" key={step.id}>
+                <div className="max-w-[720px] mx-auto">
+                  <StepCard step={step} index={index} />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -6,25 +6,33 @@ const specialties = [
     title: "Surgical Specialties",
     count: "9 specialties",
     icon: Scissors,
-    description: "Orthopaedics, General Surgery, Neurosurgery, and more",
+    bg: "bg-red-50",
+    ring: "border-red-100",
+    color: "text-red-600",
   },
   {
     title: "Medical Specialties",
     count: "6 specialties",
     icon: Heart,
-    description: "Cardiology, Neurology, Gastroenterology, and more",
+    bg: "bg-blue-50",
+    ring: "border-blue-100",
+    color: "text-blue-600",
   },
   {
     title: "Diagnostic Specialties",
     count: "2 specialties",
     icon: Microscope,
-    description: "Radiology and Pathology",
+    bg: "bg-green-50",
+    ring: "border-green-100",
+    color: "text-green-600",
   },
   {
     title: "Primary Care",
     count: "1 specialty",
     icon: Stethoscope,
-    description: "General Practice/Family Medicine",
+    bg: "bg-purple-50",
+    ring: "border-purple-100",
+    color: "text-purple-600",
   },
 ];
 
@@ -33,14 +41,15 @@ const SpecialtyCard = ({ specialty }: { specialty: typeof specialties[0] }) => {
 
   return (
     <div>
-      <Card className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer group">
-        <CardContent className="p-6 text-center">
-          <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
-            <Icon className="w-8 h-8 text-blue-600" />
+      <Card className="bg-white rounded-xl shadow-md hover:shadow-lg transition-transform duration-200 hover:scale-102 cursor-pointer">
+        <CardContent className="p-8 text-center">
+          <div className={`w-16 h-16 ${specialty.bg} rounded-full flex items-center justify-center mx-auto mb-6`}>
+            <div className={`w-10 h-10 bg-white rounded-full flex items-center justify-center border-2 ${specialty.ring}`}>
+              <Icon className={`${specialty.color} w-6 h-6`} />
+            </div>
           </div>
-          <h3 className="text-xl font-bold text-gray-900 mb-2">{specialty.title}</h3>
-          <p className="text-sm font-medium text-blue-600 mb-2">{specialty.count}</p>
-          <p className="text-gray-600 text-sm">{specialty.description}</p>
+          <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-2">{specialty.title}</h3>
+          <p className="text-sm text-gray-500 mb-1">{specialty.count}</p>
         </CardContent>
       </Card>
     </div>
@@ -60,7 +69,7 @@ const SpecialtiesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
           {specialties.map((specialty) => (
             <SpecialtyCard key={specialty.title} specialty={specialty} />
           ))}
