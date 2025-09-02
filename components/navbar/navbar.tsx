@@ -14,7 +14,7 @@ const Navbar = () => {
         <NavMenu className="hidden md:block" />
 
         <div className="flex items-center gap-3">
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <Button className="hidden xs:inline-flex bg-white text-blue-600 hover:bg-gray-100">
             Get Started
           </Button>

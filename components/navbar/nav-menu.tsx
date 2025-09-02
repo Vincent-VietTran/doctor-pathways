@@ -17,7 +17,7 @@ export const NavMenu = (props: NavigationMenuProps) => (
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="#features">Pathways</Link>
+          <Link href="#pathways">Pathways</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>

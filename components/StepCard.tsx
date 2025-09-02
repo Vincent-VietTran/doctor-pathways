@@ -10,7 +10,7 @@ interface StepCardProps {
 
 export default function StepCard({ icon: Icon, title, duration, description }: StepCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-8 max-w-2xl w-full hover:scale-105 transition-transform">
+    <div className="bg-white rounded-xl shadow-lg p-8 max-w-2xl w-full hover:scale-105 transition-transform hover:cursor-pointer">
       <div className="flex items-center mb-4">
         <div className="bg-blue-100 rounded-full p-3 mr-4">
           <Icon className="w-8 h-8 text-blue-600" />
