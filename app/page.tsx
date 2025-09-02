@@ -3,23 +3,13 @@ import Header from '../components/Header'
 import SpecialtyCard from '../components/SpecialtyCard'
 import StepCard from '@/components/StepCard'
 import Footer from '@/components/Footer'
+import Navbar from '@/components/navbar/navbar'
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100">
-      <Header />
-
-      {/* Main Title Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            Doctor Pathways
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Navigate your journey from medical school to specialty training in Australia
-          </p>
-        </div>
-      </section>
+  <Navbar />
+  <Header />
 
       {/* Steps Section */}
       <section className="py-16 bg-gray-50">

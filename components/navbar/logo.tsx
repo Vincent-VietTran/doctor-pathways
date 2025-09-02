@@ -1,5 +1,5 @@
 export const Logo = () => (
   <div className="text-white font-bold text-xl">
-    doctorpathways
+    <a href="/">Doctor Pathways</a>
   </div>
 );

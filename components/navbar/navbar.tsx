@@ -15,9 +15,6 @@ const Navbar = () => {
 
         <div className="flex items-center gap-3">
           <ThemeToggle />
-          <Button variant="outline" className="hidden sm:inline-flex border-white text-white hover:bg-white hover:text-blue-600">
-            Sign In
-          </Button>
           <Button className="hidden xs:inline-flex bg-white text-blue-600 hover:bg-gray-100">
             Get Started
           </Button>
