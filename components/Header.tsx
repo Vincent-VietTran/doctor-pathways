@@ -19,7 +19,7 @@ export default function Header() {
             </h1>
             <p className="text-base sm:text-lg text-emerald-100 mb-6">
               {/* Empowering Your Journey to a Doctor Career in Australia */}
-              Discover the best Pathways and Direction Across Specialties and Regions
+              Discover the best Pathways and Direction across Specialties and Regions
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mx-auto max-w-2xl">
