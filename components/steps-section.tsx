@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Book, User, Target } from "lucide-react";
 import StepCard from "./StepCard";
 
@@ -32,38 +31,21 @@ const StepsSection = () => {
   return (
     <>
       {/* Steps Section */}
-            <section className="py-16 bg-gray-50">
-              <div className="container mx-auto px-4">
-                <div className="flex flex-col items-center space-y-8">
-                  <StepCard
-                    icon={Book}
-                    title="Medical School"
-                    duration="4–6 years"
-                    description="Complete your medical degree (MD/MBBS) at an accredited Australian medical school. Focus on core rotations and begin exploring specialties."
-                  />
-      
-                  {/* Connector */}
-                  <div className="w-1 h-16 bg-green-700 rounded-full"></div>
-      
-                  <StepCard
-                    icon={User}
-                    title="Internship (PGY1)"
-                    duration="1 year"
-                    description="Your first year as a doctor. Complete required rotations in Medicine, Surgery, Emergency Medicine, and gain general registration with AHPRA."
-                  />
-      
-                  {/* Connector */}
-                  <div className="w-1 h-16 bg-green-700 rounded-full"></div>
-      
-                  <StepCard
-                    icon={Target}
-                    title="Specialty Training"
-                    duration="3–7 years (including residency and applications)"
-                    description="Residency, applications, and 3–6 year advanced training in your chosen medical specialty. Complete rotations, exams, and requirements specific to your specialty college."
-                  />
-                </div>
-              </div>
-            </section>
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col items-center space-y-8">
+            {steps.map((step) => (
+              <StepCard
+                key={step.id}
+                title={step.title}
+                description={step.description}
+                duration={step.duration}
+                icon={step.icon}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
     </>
 )};
 
