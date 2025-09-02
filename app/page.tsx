@@ -1,20 +1,16 @@
-import FAQ from "@/components/faq";
-import Features from "@/components/features";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import { Navbar } from "@/components/navbar";
-import Pricing from "@/components/pricing";
-import Testimonial from "@/components/testimonial";
+import SpecialtiesSection from "@/components/specialties-section";
+import StepsSection from "@/components/steps-section";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
-      <Features />
-      <FAQ />
-      <Testimonial />
-      <Pricing />
+      <StepsSection />
+      <SpecialtiesSection />
       <Footer />
     </>
   );

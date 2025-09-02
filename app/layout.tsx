@@ -9,45 +9,44 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Beautiful Shadcn UI Landing Page",
+  title: "Doctor Pathways - Medical Specialty Training in Australia",
   description:
-    "A beautiful landing page built with Shadcn UI, Next.js 15, Tailwind CSS, and Shadcn UI Blocks.",
+    "Your guide to medical specialty training in Australia. Navigate your journey from medical school to specialty training with comprehensive information on pathways, requirements, and applications.",
   keywords: [
-    "Shadcn UI Landing Page",
-    "Shadcn UI Blocks",
-    "Shadcn UI",
-    "Landing Page",
-    "Tailwind CSS Landing Page",
-    "Beautiful Shadcn UI Landing Page",
-    "Next.js 15 Landing Page",
-    "Simple Landing Page",
-    "Landing Page Template",
-    "Landing Page Design",
+    "medical specialty training",
+    "Australia medical pathways",
+    "doctor training",
+    "medical school",
+    "specialty training",
+    "AHPRA",
+    "medical colleges",
+    "residency training",
+    "medical career",
+    "Australian medicine",
   ],
   openGraph: {
     type: "website",
-    siteName: "Shadcn Landing Page",
-    locale: "en_US",
-    url: "https://shadcn-landing-page.vercel.app",
-    title: "Shadcn Landing Page",
+    siteName: "Doctor Pathways",
+    locale: "en_AU",
+    url: "https://doctor-pathways.com",
+    title: "Doctor Pathways - Medical Specialty Training in Australia",
     description:
-      "A beautiful landing page built with Shadcn UI, Next.js 15, Tailwind CSS, and Shadcn UI Blocks.",
+      "Your guide to medical specialty training in Australia. Navigate your journey from medical school to specialty training with comprehensive information on pathways, requirements, and applications.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Shadcn UI Landing Page Preview",
+        alt: "Doctor Pathways - Medical Specialty Training Guide",
       },
     ],
   },
   authors: [
     {
-      name: "Akash Moradiya",
-      url: "https://shadcnui-blocks.com",
+      name: "Doctor Pathways",
     },
   ],
-  creator: "Akash Moradiya",
+  creator: "Doctor Pathways",
   icons: [
     {
       rel: "icon",
