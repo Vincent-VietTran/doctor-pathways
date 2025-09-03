@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Logo } from "./logo";
 import { NavMenu } from "./nav-menu";
 import { NavigationSheet } from "./navigation-sheet";
-import ThemeToggle from "../theme-toggle";
 
 const Navbar = () => {
   return (
@@ -14,7 +13,7 @@ const Navbar = () => {
         <NavMenu className="hidden md:block" />
 
         <div className="flex items-center gap-3">
-          {/* <ThemeToggle /> */}
+          {/* theme toggle intentionally disabled for now */}
           <Button className="hidden xs:inline-flex bg-white text-[#184936] hover:bg-gray-100">
             Get Started
           </Button>

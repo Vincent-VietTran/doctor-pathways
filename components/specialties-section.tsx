@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Scissors, Heart, Microscope, Stethoscope } from "lucide-react";
 import SpecialtyCard from "./SpecialtyCard";
 

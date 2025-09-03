@@ -8,6 +8,8 @@ const steps = [
     description: "Complete your medical degree (MD/MBBS) at an accredited Australian medical school. Focus on core rotations and begin exploring specialties.",
     duration: "4–6 years",
     icon: Book,
+    // Add medical school page
+    href: "/"
   },
   {
     id: 2,
@@ -15,6 +17,8 @@ const steps = [
     description: "Your first year as a doctor. Complete required rotations in Medicine, Surgery, Emergency Medicine, and gain general registration with AHPRA.",
     duration: "1 year",
     icon: User,
+    // Add internship page
+    href: "/"
   },
   {
     id: 3,
@@ -22,6 +26,8 @@ const steps = [
     description: "Residency, applications, and 3–6 year advanced training in your chosen medical specialty. Complete rotations, exams, and requirements specific to your specialty college.",
     duration: "3–7 years (including residency and applications)",
     icon: Target,
+    // Specialty training page
+    href: "/specialty-training"
   },
 ];
 
@@ -41,6 +47,7 @@ const StepsSection = () => {
                 description={step.description}
                 duration={step.duration}
                 icon={step.icon}
+                href={step.href}
               />
             ))}
           </div>

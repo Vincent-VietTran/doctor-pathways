@@ -1,4 +1,4 @@
-import { Book, User, Target, Scissors, Heart, Microscope, Stethoscope } from 'lucide-react'
+import { Scissors, Heart, Microscope, Stethoscope } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/navbar/navbar'
